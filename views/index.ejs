@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= title %> </title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body onload="slider(), captionSlider()">
+    <div class="main-container">
+        <div class="navbar-container">
+            <ul>
+                <li>
+                    <h2>Your<span>Space</span></h2>
+                    <li style="float: right"><a class="active" href="/">Home</a></li>
+                    <li style="float: right"><a href="/login">Sign In</a></li>
+                    <li style="float: right"><a href="#" onclick="openModal()">Sign Up</a></li>
+                    <li style="float: right"><a href="#about">About</a></li>
+                </li>
+            </ul>
+        </div>
+        <div class="slider-container">
+            <img src="./images/photoshoot.jpg"
+           id="sldimg" style="height: 500px">
+           <div class="caption">
+               <h3 >Plan your next<br /><span><h1 id="sldCaption">photoshoot</h1></span></h3>
+           </div>
+        </div>
+        <div class="text-container">
+            <h1>What can you do with YourSpace?</h1>
+        </div>
+        <div class="service-container">
+            <h1>LIST</h1>
+            <p>Start earning by sharing your space. Make use of off-peak hours and unique spaces!</p>
+        </div>
+        <div class="service-container-1">
+            <h1>BOOK</h1>
+            <p>Find and book the perfect spaces or experiences that match your requirements!</p>
+
+        </div>
+        <div class="service-container-2">
+            <h1>PLAN</h1>
+            <p>Enrich your booking with add-on services such as food, décor and more to create the perfect event!</p>
+
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <a href="#"><img src="./images/features/chris-modern-bistro-mohakhali.jpeg" style="width:100%"></a>
+                <div class="container">
+                  <p>Chris Modern Bistro</p>
+                  <h4><b>Mohakhali</b></h4>
+                  <p>From: ৳3000.0</p>
+                </div>
+              </div>
+
+        </div>
+        <div class="card-container-1">
+            <div class="card">
+                <a href="#"><img src="./images/features/open-rooftop-with-golf-view-banani-dohs.jpg" style="width:100%"></a>
+                <div class="container">
+                  <p>Open Rooftop with golf View</p>
+                  <h4><b>Banani Dohs</b></h4>
+                  <p>From: ৳3000.0</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-container-2">
+            <div class="card">
+                <a href="#"><img src="./images/features/cozy-cake -studio.jpg" style="width:100%"></a>
+                <div class="container">
+                  <p>Open Rooftop with golf View</p>
+                  <h4><b>Gulshan</b></h4>
+                  <p>From: ৳3000.0</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-container-2">
+            <h2>What is your planing?</h2>
+        </div>
+        <div class="card-container-4">
+            <div class="card">
+                <a href="#"><img src="./images/planning/meeting.jpg" style="width:100%"></a>
+                <div class="container">
+                  <h4><b>Meeting</b></h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-container-5">
+            <div class="card">
+                <a href="#"><img src="./images/planning/Birthday_party.jpg" style="width:100%"></a>
+                <div class="container">
+                  <h4><b>Birthday Party</b></h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-container-6">
+            <div class="card">
+                <a href="#"><img src="./images/planning/Anniversary.jpg" style="width:100%"></a>
+                <div class="container">
+                  <h4><b>Anniversary</b></h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-container-7">
+            <div class="card">
+                <a href="#"><img src="./images/planning/performance.jpg" style="width:100%"></a>
+                <div class="container">
+                  <h4><b>Performance</b></h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-container-8">
+            <div class="card">
+                <a href="#"><img src="./images/planning/photoshoot.jpg" style="width:100%"></a>
+                <div class="container">
+                  <h4><b>Photoshoot</b></h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-container-9">
+            <div class="card">
+                <a href="#"><img src="./images/planning/bridalshower.jpg" style="width:100%"></a>
+                <div class="container">
+                  <h4><b>Bridal Shower</b></h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-container-10">
+            <div class="card">
+                <a href="#"><img src="./images/planning/workshop.jpg" style="width:100%"></a>
+                <div class="container">
+                  <h4><b>Workshop</b></h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-container-11">
+            <div class="card">
+                <a href="#"><img src="./images/planning/outdoorevent.jpg" style="width:100%"></a>
+                <div class="container">
+                  <h4><b>Outdoor event</b></h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-container">
+            <div>
+                <h2>Event<span>Canvas</span></h2>
+            </div>>
+            <div>
+                <p>&copy; 2021 Allrights Reserved by EventCanvas Team!</p>
+            </div>
+            
+
+        </div>
+       
+    </div>
+
+    <!-- Modal html for sign up form -->
+    <div class="modal-wrapper" id="create-account-modal">
+        <div class="modal">
+          <a href="#" onclick="closeModal()" class="modal-close">+</a>
+          <div class="modal-title">
+            <h2>Sign Up</h2>
+          </div>
+          <div class="modal-message">
+            <p>Please fill in this form to create an account</p>
+          </div>
+          <div class="modal-border">
+            <hr />
+          </div>
+          <div class="modal-body">
+            <form id="create-account-form">
+              <input type="text" placeholder="enter name" name="name" />
+              <p class="error show">This is error</p>
+              <input type="text" placeholder="enter email" name="email" />
+              <input type="text" placeholder="enter mobile" name="mobile" />
+              <input
+                type="password"
+                placeholder="enter password"
+                name="password"
+              />
+              <div class="clearfix">
+                <button
+                  type="button"
+                  onclick="document.getElementById('create-account-modal').style.display('none')"
+                  class="cancelbtn"
+                >
+                  Cancle
+                </button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <script>
+        let index = 0;
+        let images = new Array(
+            "./images/photoshoot.jpg",
+            "./images/slide-img5.jpg",
+            "./images/slide-img3.jpeg",
+            "./images/slide-img4.jpeg"
+        );
+
+        function slider() {
+            let sldimg = document.getElementById("sldimg");
+            if(index > images.length-1) {
+                index = 0;
+            }
+            sldimg.src = images[index];
+            index++;
+            setTimeout("slider()", 3000);
+        }
+
+        let caption_index = 0;
+        let captions = new Array(
+            "Photoshoot",
+            "Meeting",
+            "Birthday",
+            "Dating"
+        );
+
+        function captionSlider() {
+            let sldCaption = document.getElementById("sldCaption");
+            if(caption_index > captions.length-1) {
+                caption_index = 0;
+            }
+            sldCaption.innerText = captions[caption_index];
+            caption_index++;
+            setTimeout('captionSlider()', 3000)
+        }
+        // Sign up modal javascript code
+        const modal = document.getElementById("create-account-modal");
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      function openModal() {
+        modal.style.display = "block";
+      }
+    </script>  
+</body>
+</html>

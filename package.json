@@ -1,0 +1,32 @@
+{
+  "name": "eventcanvas",
+  "version": "1.0.0",
+  "description": "An Event Management Web application",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon app.js",
+    "prod": "NODE_ENV=production node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H0ssain/YourSpace.git"
+  },
+  "author": "Team",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/H0ssain/YourSpace/issues"
+  },
+  "homepage": "https://github.com/H0ssain/YourSpace#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "http-errors": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.14",
+    "multer": "^1.4.2"
+  }
+}
